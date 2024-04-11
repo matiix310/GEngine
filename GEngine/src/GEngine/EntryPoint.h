@@ -5,6 +5,9 @@
 extern GEngine::Application* GEngine::CreateApplication();
 
 int main(int argc, char** argv) {
+
+	GEngine::Log::Init();
+
 	auto app = GEngine::CreateApplication();
 	app->Run();
 	delete app;
