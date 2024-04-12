@@ -4,6 +4,7 @@
 
 #include "Core.h"
 #include "spdlog/spdlog.h"
+#include "spdlog/fmt/ostr.h"
 
 namespace GEngine {
 
@@ -31,8 +32,8 @@ namespace GEngine {
 
 
 // Client log macros
-#define GG_CLIENT_TRACE(...)    ::GEngine::Log::GetClientLogger()->trace(__VA_ARGS__)
-#define GG_CLIENT_INFO(...)     ::GEngine::Log::GetClientLogger()->info(__VA_ARGS__)
-#define GG_CLIENT_WARN(...)     ::GEngine::Log::GetClientLogger()->warn(__VA_ARGS__)
-#define GG_CLIENT_ERROR(...)    ::GEngine::Log::GetClientLogger()->error(__VA_ARGS__)
-#define GG_CLIENT_FATAL(...)    ::GEngine::Log::GetClientLogger()->fatal(__VA_ARGS__)
+#define GG_TRACE(...)    ::GEngine::Log::GetClientLogger()->trace(__VA_ARGS__)
+#define GG_INFO(...)     ::GEngine::Log::GetClientLogger()->info(__VA_ARGS__)
+#define GG_WARN(...)     ::GEngine::Log::GetClientLogger()->warn(__VA_ARGS__)
+#define GG_ERROR(...)    ::GEngine::Log::GetClientLogger()->error(__VA_ARGS__)
+#define GG_FATAL(...)    ::GEngine::Log::GetClientLogger()->fatal(__VA_ARGS__)
