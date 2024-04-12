@@ -1,9 +1,7 @@
 #pragma once
 
+#include "ggpch.h"
 #include "GEngine/Core.h"
-
-#include <string>
-#include <functional>
 
 namespace GEngine {
 
